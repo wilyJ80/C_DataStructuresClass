@@ -17,15 +17,19 @@ int main(void) {
       scanf(" %d", &number);
 
       insert_start(&head, number);
+
+      printf("\n[");
       print_all(head);
-      printf("\n\n");
+      printf("]\n\n");
 
       break;
 
     case 'd':
       printf("Deleted: %d\n", delete_start(&head));
+
+      printf("\n[");
       print_all(head);
-      printf("\n\n");
+      printf("]\n\n");
 
       break;
     }
